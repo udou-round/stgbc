@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.time {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 16px;
+}
+
+.tablemain {
+    width: 100%; /* 设置表格宽度 */
+    margin-top: 13px;
+    table-layout: fixed;
+    background-color: #cccccc
+}
+
+.tablemain td {
+    background-color: #ffffff;
+    height: 25px;
+    line-height: 150%;
+}
+
+.font-center {
+    vertical-align: middle; /* 垂直居中对齐 */
+    text-align: center; /* 水平居中对齐 */
+    white-space: nowrap; /* 防止内容换行 */
+}
+
+.warn-font{
+    background-color: orange !important;
+}
+
+.header {
+    background: #e9faff !important;
+
+}
+
+.btbg1 {
+    background: #f2fbfe !important;
+}
+
+.header-f2 {
+    background: #f3f3f3 !important;
+}
+
+.title {
+    font-family: 微软雅黑;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 1px dashed #CCCCCC;
+    color: #255e95;
+}
+
+.header-f {
+    font-family: 微软雅黑;
+    font-size: 16px;
+    font-weight: bold;
+    color: #255e95;
+    background-color: #e9faff;
+}
+
+.sfont {
+    font-size: 12px;
+}
+
+
+.tabtxt2 {
+    font-family: 微软雅黑;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+    color: #327cd1;
+}
+
+.font-n {
+    font-family: 微软雅黑;
+    font-size: 14px;
+    padding-left: 15px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>截面验算表</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <link rel="stylesheet" href="tablestyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title font-center">截面验算表</h1>
+        <div class="time">2024-9-10 20:02</div>
+    </div>
+
+<table border="0" cellspacing="1" cellpadding="4" class="tablemain" align="center">
+    <tr>
+        <th width="6%" colspan="2" class="header font-center header-f" rowspan="2">杆件名称</th>
+        <th width="10%" class="header font-center header-f" rowspan="2">截面组合</th>
+        <th width="4%" class="header font-center header-f" rowspan="2">\(A_m\)</th>
+        <th width="4%" class="header font-center header-f" rowspan="2">\(A_j\)</th>
+        <th width="10%" class="header font-center header-f" rowspan="2">\(I_x/I_y\)</th>
+        <th width="4%" class="header font-center header-f" rowspan="2">\(r_x/r_y\)</th>
+        <th width="10%" class="header font-center header-f" rowspan="2">\(l_x/l_y\)</th>
+        <th width="4%" class="header font-center header-f" rowspan="2">\(\lambda_x/\lambda_y\)</th>
+        <th width="4%" class="header font-center header-f" rowspan="2">构造</th>
+        <th width="8%" colspan="2" class="header font-center header-f">局部稳定</th>
+        <th width="8%" colspan="3" class="header font-center header-f">总体稳定</th>
+        <th width="16%" colspan="2" class="header font-center header-f">疲劳验算</th>
+        <th width="12%" colspan="2" class="header font-center header-f">拉力强度</th>
+
+    </tr>
+    <tr>
+        <th class="header font-center">翼缘</th>
+        <th class="header font-center">腹板</th>
+        <th class="header font-center">\(\sigma_m\)</th>
+        <th class="header font-center">\(\varphi_1\)</th>
+        <th class="header font-center">\([\sigma_m]\)</th>
+        <th class="header font-center sfont">\( \gamma_d \gamma_n(\sigma_{max}-\sigma_{min})/\)<br> \(\gamma_d
+            \gamma_n'\sigma_{max}\)
+        </th>
+        <th class="header font-center sfont">\( \gamma_t [\sigma_0]/\)<br> \(\gamma_t \gamma_\rho[\sigma_0] \)</th>
+        <th class="header font-center">\(\sigma_j\)</th>
+        <th class="header font-center">\(\gamma[\sigma]\)</th>
+    </tr>
+    <tr>
+        <th colspan="2" class="header font-center header-f">项次</th>
+        <th class="header-f2 font-center">1</th>
+        <th class="header-f2 font-center">2</th>
+        <th class="header-f2 font-center">3</th>
+        <th class="header-f2 font-center">4</th>
+        <th class="header-f2 font-center">5</th>
+        <th class="header-f2 font-center">6</th>
+        <th class="header-f2 font-center">7</th>
+        <th class="header-f2 font-center">8</th>
+        <th class="header-f2 font-center">9</th>
+        <th class="header-f2 font-center">10</th>
+        <th class="header-f2 font-center">11</th>
+        <th class="header-f2 font-center">12</th>
+        <th class="header-f2 font-center">13</th>
+        <th class="header-f2 font-center">14</th>
+        <th class="header-f2 font-center">15</th>
+        <th class="header-f2 font-center">16</th>
+        <th class="header-f2 font-center">17</th>
+    </tr>
+    <tr>
+        <th colspan="2" class="header font-center header-f">单位</th>
+        <th class="header-f2 font-center"> \(mm\times mm\)</th>
+        <th class="header-f2 font-center">\(cm^2\)</th>
+        <th class="header-f2 font-center">\(cm^2\)</th>
+        <th class="header-f2 font-center">\(cm^4\)</th>
+        <th class="header-f2 font-center">\(cm\)</th>
+        <th class="header-f2 font-center">\(cm\)</th>
+        <th class="header-f2 font-center">&nbsp;</th>
+        <th class="header-f2 font-center">&nbsp;</th>
+        <th class="header-f2 font-center">&nbsp;</th>
+        <th class="header-f2 font-center">&nbsp;</th>
+        <th class="header-f2 font-center">\(MPa\)</th>
+        <th class="header-f2 font-center">&nbsp;</th>
+        <th class="header-f2 font-center">\(MPa\)</th>
+        <th class="header-f2 font-center">\(MPa\)</th>
+        <th class="header-f2 font-center">\(MPa\)</th>
+        <th class="header-f2 font-center">\(MPa\)</th>
+        <th class="header-f2 font-center">\(MPa\)</th>
+    </tr>
+    <tr>
+        <th rowspan="4" class="header-f2 font-center">上弦杆</th>
+        <th class="header-f2 font-center" rowspan="2">1</th>
+        <td class="font-n font-center">22222</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="header-f2 font-center" rowspan="2">2</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+        <th rowspan="8" class="header-f2 font-center">下弦杆</th>
+        <td class="header-f2 font-center" rowspan="2">1</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td class="header-f2 font-center" rowspan="2">2</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+        <td class="font-center" rowspan="2">&nbsp;</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</body>
+</html>
